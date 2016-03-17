@@ -191,5 +191,10 @@ namespace CustZero_Tours
         {
 
         }
+
+        private void btClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

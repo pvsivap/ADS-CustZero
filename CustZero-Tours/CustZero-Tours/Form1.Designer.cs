@@ -32,6 +32,7 @@
             this.lblIntNatTour = new System.Windows.Forms.LinkLabel();
             this.LblDomasticTour = new System.Windows.Forms.LinkLabel();
             this.pnlTour = new System.Windows.Forms.Panel();
+            this.lblSouth = new System.Windows.Forms.LinkLabel();
             this.lblTourName6 = new System.Windows.Forms.LinkLabel();
             this.lblTourName5 = new System.Windows.Forms.LinkLabel();
             this.lblTourName4 = new System.Windows.Forms.LinkLabel();
@@ -41,7 +42,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pctTour = new System.Windows.Forms.PictureBox();
             this.btBooking = new System.Windows.Forms.Button();
-            this.lblSouth = new System.Windows.Forms.LinkLabel();
+            this.btClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlTour.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -94,6 +95,16 @@
             this.pnlTour.Name = "pnlTour";
             this.pnlTour.Size = new System.Drawing.Size(162, 332);
             this.pnlTour.TabIndex = 1;
+            // 
+            // lblSouth
+            // 
+            this.lblSouth.AutoSize = true;
+            this.lblSouth.Location = new System.Drawing.Point(13, 187);
+            this.lblSouth.Name = "lblSouth";
+            this.lblSouth.Size = new System.Drawing.Size(56, 13);
+            this.lblSouth.TabIndex = 6;
+            this.lblSouth.TabStop = true;
+            this.lblSouth.Text = "South tour";
             // 
             // lblTourName6
             // 
@@ -173,35 +184,36 @@
             // 
             this.pctTour.Location = new System.Drawing.Point(3, 4);
             this.pctTour.Name = "pctTour";
-            this.pctTour.Size = new System.Drawing.Size(763, 388);
+            this.pctTour.Size = new System.Drawing.Size(770, 440);
             this.pctTour.TabIndex = 0;
             this.pctTour.TabStop = false;
             this.pctTour.Click += new System.EventHandler(this.pctTour_Click);
             // 
             // btBooking
             // 
-            this.btBooking.Location = new System.Drawing.Point(798, 406);
+            this.btBooking.Location = new System.Drawing.Point(817, 474);
             this.btBooking.Name = "btBooking";
             this.btBooking.Size = new System.Drawing.Size(133, 30);
             this.btBooking.TabIndex = 1;
             this.btBooking.Text = "Proceed for booking";
             this.btBooking.UseVisualStyleBackColor = true;
             // 
-            // lblSouth
+            // btClose
             // 
-            this.lblSouth.AutoSize = true;
-            this.lblSouth.Location = new System.Drawing.Point(13, 187);
-            this.lblSouth.Name = "lblSouth";
-            this.lblSouth.Size = new System.Drawing.Size(56, 13);
-            this.lblSouth.TabIndex = 6;
-            this.lblSouth.TabStop = true;
-            this.lblSouth.Text = "South tour";
+            this.btClose.Location = new System.Drawing.Point(647, 476);
+            this.btClose.Name = "btClose";
+            this.btClose.Size = new System.Drawing.Size(146, 29);
+            this.btClose.TabIndex = 3;
+            this.btClose.Text = "Close";
+            this.btClose.UseVisualStyleBackColor = true;
+            this.btClose.Click += new System.EventHandler(this.btClose_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 467);
+            this.ClientSize = new System.Drawing.Size(980, 525);
+            this.Controls.Add(this.btClose);
             this.Controls.Add(this.btBooking);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pnlTour);
@@ -236,6 +248,7 @@
         private System.Windows.Forms.Button btBooking;
         private System.Windows.Forms.PictureBox pctTour;
         private System.Windows.Forms.LinkLabel lblSouth;
+        private System.Windows.Forms.Button btClose;
     }
 }
 
