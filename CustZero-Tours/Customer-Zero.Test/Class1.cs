@@ -34,7 +34,7 @@ namespace Customer_Zero.Test
             if (File.Exists("D:\\Siva\\Tours\\Amarnath.png"))
                 isFileExist = false;
 
-            Assert.AreEqual(true, isFileExist);
+            Assert.AreEqual(false, isFileExist);
         }
 
         [TestCase]
@@ -59,9 +59,18 @@ namespace Customer_Zero.Test
             if (File.Exists("D:\\Siva\\Tours\\Swiss.png"))
                 isFileExist = false;
 
+            Assert.AreEqual(false, isFileExist);
+        }
+        // Will it commit ??????
+        [TestCase]
+        public void DummyTestCase()
+        {
+            bool isFileExist = true;
+            if ("y" == "y")
+                isFileExist = false;
+
             Assert.AreEqual(true, isFileExist);
         }
         // Will it commit ??????
-        
     }
 }
