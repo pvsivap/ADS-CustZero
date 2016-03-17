@@ -98,7 +98,7 @@ namespace CustZero_Tours
             pnlTour.Visible = false;
             pctTour.Visible = false;
             btBooking.Visible = false;
-
+            pctTour.Image = Image.FromFile("D:\\Siva\\Tours\\ToursAndTraves.png");
             //LblDomasticTour.BackColor = Color.Red;
             //lblIntNatTour.BackColor = Color.Red;
 
