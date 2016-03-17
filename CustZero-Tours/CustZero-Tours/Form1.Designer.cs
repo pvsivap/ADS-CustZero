@@ -41,6 +41,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pctTour = new System.Windows.Forms.PictureBox();
             this.btBooking = new System.Windows.Forms.Button();
+            this.lblSouth = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             this.pnlTour.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -49,6 +50,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.lblIntNatTour);
             this.panel1.Controls.Add(this.LblDomasticTour);
             this.panel1.Location = new System.Drawing.Point(3, 5);
@@ -80,6 +82,8 @@
             // 
             // pnlTour
             // 
+            this.pnlTour.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlTour.Controls.Add(this.lblSouth);
             this.pnlTour.Controls.Add(this.lblTourName6);
             this.pnlTour.Controls.Add(this.lblTourName5);
             this.pnlTour.Controls.Add(this.lblTourName4);
@@ -94,7 +98,7 @@
             // lblTourName6
             // 
             this.lblTourName6.AutoSize = true;
-            this.lblTourName6.Location = new System.Drawing.Point(14, 163);
+            this.lblTourName6.Location = new System.Drawing.Point(13, 158);
             this.lblTourName6.Name = "lblTourName6";
             this.lblTourName6.Size = new System.Drawing.Size(55, 13);
             this.lblTourName6.TabIndex = 5;
@@ -183,6 +187,16 @@
             this.btBooking.Text = "Proceed for booking";
             this.btBooking.UseVisualStyleBackColor = true;
             // 
+            // lblSouth
+            // 
+            this.lblSouth.AutoSize = true;
+            this.lblSouth.Location = new System.Drawing.Point(13, 187);
+            this.lblSouth.Name = "lblSouth";
+            this.lblSouth.Size = new System.Drawing.Size(56, 13);
+            this.lblSouth.TabIndex = 6;
+            this.lblSouth.TabStop = true;
+            this.lblSouth.Text = "South tour";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +235,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btBooking;
         private System.Windows.Forms.PictureBox pctTour;
+        private System.Windows.Forms.LinkLabel lblSouth;
     }
 }
 
