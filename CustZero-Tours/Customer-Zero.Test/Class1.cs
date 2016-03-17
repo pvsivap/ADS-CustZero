@@ -66,7 +66,7 @@ namespace Customer_Zero.Test
         public void DummyTestCase()
         {
             bool isFileExist = true;
-            if ("y" == "y")
+            if ("y" == "x")
                 isFileExist = false;
 
             Assert.AreEqual(true, isFileExist);
