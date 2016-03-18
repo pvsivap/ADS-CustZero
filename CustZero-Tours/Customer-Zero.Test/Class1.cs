@@ -71,6 +71,14 @@ namespace Customer_Zero.Test
 
             Assert.AreEqual(true, isFileExist);
         }
-        //comment
+        [TestCase]
+        public void DemoTestCase1()
+        {
+            bool isFileExist = true;
+            if ("y" == "B")
+                isFileExist = false;
+
+            Assert.AreEqual(true, isFileExist);
+        }
     }
 }
