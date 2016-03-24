@@ -75,10 +75,11 @@ namespace Customer_Zero.Test
         public void DemoTestCase1()
         {
             bool isFileExist = true;
-            if ("y" == "B")
+            if ("y" == "y")
                 isFileExist = false;
 
             Assert.AreEqual(true, isFileExist);
+            //comments
         }
     }
 }
